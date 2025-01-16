@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yogyakarta</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo"><h1 style="font-size: 20px">Yogyakarta</h1></div>
+        <div class="menu">
+          <a href="#" style="font-size: 18px">Home</a>
+          <a href="#">Gallery</a>
+          <a
+            href="https://www.youtube.com/channel/UCwfaAHy4zQUb2APNOGXUCCA"
+            target="_blank"
+            >About</a
+          >
+          <a href="#">Contact</a>
+        </div>
+      </nav>
+      <div class="parallax"></div>
+      <main>
+        <section>
+          <h3>Welcome To YOGYAKARTA</h3>
+          <h1>
+            DO COME & VISIT <span class="change_content"> </span>
+            <span style="margin-top: -10px"> | </span>
+          </h1>
+          <p>"Jogja is the call, happiness is the answer."</p>
+          <a href="#" class="btnone">Learn More</a>
+          <a href="#" class="btntwo">Signup Here</a>
+        </section>
+      </main>
+    </header>
+    <div class="content">
+      <h2>More About Yogyakarta</h2>
+      <p>
+        Yogyakarta is a city on the island of Java, Indonesia. It is known for
+        its traditional arts and cultural heritage.
+      </p>
+      <p>
+        Explore the rich history, beautiful landscapes, and vibrant culture of
+        this amazing city.
+      </p>
+    </div>
+  </body>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Josefin Sans", sans-serif;
+    }
+
+    header {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    nav {
+      width: 100%;
+      height: 15vh;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 10;
+    }
+
+    nav .logo {
+      width: 25%;
+      text-align: center;
+    }
+
+    nav .menu {
+      width: 40%;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    nav .menu a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.5s;
+    }
+
+    nav .menu a:first-child {
+      color: #00b894;
+    }
+
+    nav .menu a:hover {
+      color: #00b894;
+      transition: 0.5s;
+    }
+
+    .parallax {
+      background-image: url("img/parangtritis2.jpg");
+      height: 100vh;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1;
+    }
+
+    main {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      height: 85vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+
+    section h3 {
+      font-size: 35px;
+      font-weight: 200;
+      letter-spacing: 3px;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    section h1 {
+      margin: 30px 0 20px 0;
+      font-size: 55px;
+      font-weight: 700;
+      text-shadow: 2px 1px 5px black;
+      text-transform: uppercase;
+    }
+
+    section p {
+      font-size: 25px;
+      word-spacing: 2px;
+      margin-bottom: 25px;
+      text-shadow: 1px 1px 1px black;
+    }
+
+    section a {
+      padding: 12px 30px;
+      border-radius: 4px;
+      outline: none;
+      text-transform: uppercase;
+      font-size: 13px;
+      font-weight: 500;
+      text-decoration: none;
+      letter-spacing: 1px;
+      transition: all 0.5s ease;
+    }
+
+    section .btnone {
+      background: #fff;
+      color: #000;
+    }
+
+    .btnone:hover {
+      background: #00b894;
+      color: white;
+    }
+
+    section .btntwo {
+      background: #00b894;
+      color: white;
+    }
+
+    .btntwo:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    .change_content:after {
+      content: "";
+      animation: changetext 10s infinite linear;
+      color: #00b894;
+    }
+
+    @keyframes changetext {
+      0% {
+        content: "Malioboro Street";
+      }
+      20% {
+        content: "Prambanan Temple";
+      }
+      35% {
+        content: "Mount Ungaran";
+      }
+      60% {
+        content: "Jomblang Cave";
+      }
+      80% {
+        content: "Yogyakarta Monument";
+      }
+      100% {
+        content: "HEHA Sky View";
+      }
+    }
+
+    .content {
+      padding: 50px;
+      background-color: #f8f8f8;
+      color: #333;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+
+    .content p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+  </style>
+</html>
